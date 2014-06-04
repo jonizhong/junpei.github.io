@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!--
+Name : Grunge
+Design : http://www.psdtemplate.com/free-psd-templates/company-psd-template.html
+Coder : Debika Mukherjee
+Website : http://www.code-pal.com
+-->
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>Neuro-robotic, computational neuroscience Researcher: J.
+ZHONG</title>
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1 id="head"><a href="index.html"><span>Junpei</span>Zhong</a>
+</h1>
+<div id="page-wrap">
+<ul id="nav">
+<li class="current_list_item"><a class="home" href="index.html">Home</a></li>
+<li><a class="about" href="about.html">About
+Me</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="pub.html">Publications</a></li>
+<li><a href="codes.html">Codes</a></li>
+<li><a href="media.html">Media</a></li>
+</ul>
+<div id="upper-content">
+</div>
+<div id="lower-content">
+<h2>Research Interests </h2>
+<p>From university to my PhD study, I have&nbsp;vast research
+interests in Computer Science, Control Theory, Information Theory and
+Embedded System etc. Right now I am quite interested in knowledge
+learning, its representation and its embodiment in a cognitive robotics
+system, inspired by computational neuroscience, developmental
+neuroscience, developmental psychology or other natural systems.
+Particularly, my research has been focused on</p>
+<h4>Prediction Mechanisms in the cortical areas&nbsp; and
+their
+applications in robots &nbsp;</h4>
+Currently I'm working with EU FP7-ITN PEOPLE <a href="http://www.robotdoc.org" target="_blank">RobotDoC</a>
+project. I'm
+working under the general topic "Neural Cognition Integration".
+Specifically, my PhD thesis focuses on the prediction mechanism
+emergence
+hierarchically from the mirror neuron system to sensory cortex. Rather
+than a centralized "predictive machine", prediction
+mechanism is distributed into different cortex areas of the brain
+hierarchically, each of which attempt to compensate the neural delay
+that exists in its own brain area. So that prediction emerges in a
+buttom-up and works in a
+top-down manner. <br />
+<br />
+Therefore, the main objective of my doctoral study is to investigate
+predictive mechanisms that exist in different hierarchy of the cortical
+areas (especially visual and motor cortices) and their functions. Their
+compensation for processing delays via prediction is necessary so that
+cortical areas encode present, not past, events. To realize such
+compensation in the context of neural networks from the mirror neuron
+system, sensorimotor integration as well as visual cortex, we suggest
+to use recurrent connections to create an internal memory to store the
+previous dynamics. <br />
+<br />
+In the first experiment, we emphasized that a short-term memory should
+exist within the mirror neuron system to assist with the action
+understanding and prediction. A recurrent network with parametric
+biases was thus applied to realize this system function in which the
+parametric bias units recognize and encode walking patterns from
+another robot. Such parametric bias units can be regarded as a
+high-level conceptualized of the walking patterns, in which the
+representations will further develop as pre-symbolic communication.<br />
+&nbsp;<br />
+Furthermore, in the second experiment of the task, we focused on the
+encoding of information in the primary visual cortex. Specifically, the
+convergence of ventral and dorsal pathways with predictive functions
+may give rise to the understanding of object affordance and object
+manipulation and its control. To model this, we designed a recurrent
+predictive network with a horizontal product where the information of
+object feature and object movement becomes successfully separated in
+its two hidden layers.<br />
+<br />
+&nbsp;<br />
+Since the dorsal pathway also allows for motor-relevant
+representations, in the third experiment, we also developed such
+recurrent connections for sensory latency compensation which also
+support smoother and faster behaviours in sensorimotor integration
+tasks. For example, the latency of the sensorimotor cycle of a robot
+may affect the response time for the motor action. We expanded the use
+of recurrent connections in the sensorimotor system, particularly in
+the sensory prediction part, so that the recurrent connections can
+compensate the delay in the sensory percepts. A continuous actor-critic
+automaton (CACLA) was also applied in the generation of smooth
+behaviours corresponding to the predictive sensory percepts.
+Experiments showed that the predictive sensorimotor architecture
+successfully increases the speed and robustness of the robot docking
+experiment.<br />
+<br />
+In the last expriment, we combined the first and second experiments and
+proposed that the learning of the visual pathways also leads to the
+conceptualization of visual information. This was realized by recurrent
+network with a horizontal product again, which was extended with
+parametric bias units (see image). We exemplified this model through a
+robot passively observing an object to learn its features and
+movements. During the learning process of observing sensorimotor
+primitives, i.e. observing a set of trajectories of arm movements and
+its oriented object features, the pre-symbolic representation was
+self-organized in the parametric units. These representational units
+acted as bifurcation parameters, guiding the robot to recognize and
+predict various learned sensorimotor primitives.<br />
+<h4>Bio-inspired Particle Filter and its SLAM application </h4>
+The utilization of multi-robot systems has a major advantage when
+comparing to single robot systems, for example, with multiple robots
+working together, it has the potential to accomplish a task faster than
+a single robot. However, when a team of robots is sharing the same
+worksite, the Simultaneously Localization and Mapping (SLAM) problem
+becomes much more difficult to resolve because a huge amount of
+information is needed to be processed as well as analyzed. But on the
+other hand, multi-robot SLAM can be more efficient if robots can
+exchange and share information regarding their sensed data properly. In
+the SLAM problem, especially for Autonomous Underwater Vehicle (AUV)
+and Unmanned Aerial Vehicle (UAV), it is necessary to include
+non-linear and non-Gaussian parameters, for which the traditional
+Kalman Filter (KF) cannot yield ideal solution. In applications
+involving non-linear and non-Gaussian parameters, Particle Filters
+(PF), which are based on the concept of Monte Carlo simulation, are
+more suitable estimation techniques. However, in problems involving
+multiple dimensions, such as the multi-robot SLAM problem, when a huge
+number of particles are being used, two problems, namely particle
+impoverishment and sample size dependency, will occur during the
+particle updating stage and these problems will become more severe. The
+problems will reduce the accuracy of the estimation results and
+resampling algorithms, such as Sequential Importance Sampling,
+Stratified Resampling and Systematic Resampling are used to alleviate
+these two problems. <br />
+<br />
+In this thesis, a novel PF algorithm for tackling the particle
+impoverishment and sample size dependency problems is being studied and
+its application in a multi-robot system is examined. In this algorithm,
+Ant Colony Optimization (ACO) is incorporated into the generic particle
+filter in order to drive the proposal distribution to approximate the
+optimal solution. Mathematical proof and results obtained from a single
+variable estimation problem as well as from the robot localization
+problem show that, after the ACO optimization, better proposal
+distribution and more accurate estimation results can be obtained. In
+order to evaluate the performance of the ACO improved PF (PFACO) when
+applied to non-linear and non-Gaussian problems, such as the
+localization and SLAM problem, studies were conducted and utilization
+of PFACO algorithm for multi-robot systems was introduced. In a
+multi-robot environment, when two robots encounter, the same
+information on the same estimation problem represented by the two sets
+of particles will be re-evaluated based on information conveyed by
+particles from different sets. The particles are then merged into a
+single set and in such cases, parallel computing can be applied in
+order to reduce the processing time. By software simulation, our
+results are better than those from traditional approaches both in
+estimation error and execution time.<br />
+<br />
+Besides I am also interested in the following areas:
+<ul>
+<li>
+<h4>Developmental Neuroscience, Developmental Psychology, and
+their insipration to robotic applications;<br />
+</h4>
+</li>
+</ul>
+<ul>
+<li>
+<h4>&nbsp;Philosophy of AI and its related neural
+modelling, such as models of consciousness and
+models of cognition.<br />
+</h4>
+</li>
+</ul>
+<div id="footer">
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+© 2012-2013 Developed by <a href="mailto:webmaster@neurobot.eu">J.
+Zhong</a>&nbsp;&nbsp;|&nbsp;&nbsp;Design by <a href="http://psdnation.info/free-grunge-psd-website-template/" target="_blank">PSD Nation</a> </div>
+</div>
+</div>
+</body></html>
